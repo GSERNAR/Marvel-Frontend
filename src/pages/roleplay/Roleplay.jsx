@@ -163,6 +163,11 @@ const Roleplay = () => {
             alt='Crushing Damage Table'
           />
         </div>
+        <p className='text-gray-700 mb-6 text-center'>
+          However, If when being crushed, the amount of dices is lesser than 7, the victim can attmepnt
+          a Strength or Willpower check. If it is higher than 15, crushing damage can be reduced
+          in an amount equal to 5 * (Strength + Willpower)
+        </p>
         <div className='flex justify-center'>
           {' '}
           {/* Added a flex container for centering */}
