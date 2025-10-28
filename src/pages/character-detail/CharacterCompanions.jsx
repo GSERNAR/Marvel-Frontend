@@ -45,7 +45,7 @@ const CharacterCompanions = () => {
   if (companions.length === 0) return null
 
   return (
-    <div className="flex flex-col max-w-full p-20">
+    <div className="flex flex-col max-w-full max-h-500 p-20">
       <div className="flex flex-row max-w-full">
         <ComicTitlePanel>Companions:</ComicTitlePanel>
       </div>

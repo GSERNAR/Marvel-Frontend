@@ -11,6 +11,7 @@ import ObjectImage from './ObjectImage'
 import ObjectLogo from './ObjectLogo'
 import ObjectBio from './ObjectBio'
 import ObjectAbilities from './ObjectAbilities'
+import CharacterCompanions from '../character-detail/CharacterCompanions'
 
 const Section = (props) => (
   <div
@@ -74,11 +75,11 @@ const ObjectDetail = () => {
             <ObjectBio />
             <ObjectAbilities />
             <ObjectSkills />
-
             <ObjectPowers />
           </Column>
         </Section>
 
+        <CharacterCompanions />
       </div>
     </FormProvider>
   )
