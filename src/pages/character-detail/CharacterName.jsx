@@ -5,19 +5,23 @@ import TextEdit from '@ui/edit/TextEdit'
 
 const CharacterName = () => {
 
+
   const { character, update } = useCharacterDetail()
 
   return (
     <div className='flex gap-4 items-center w-full'>
-      <ComicTitlePanel>Real Name:</ComicTitlePanel>
-      {character.alterego}
-      <EditButton
-        title='Edit character alterego'
-        name='alterego'
-        state={character}
-        bodyComponent={TextEdit}
-        summitFunction={update}
-      />
+      {character.alterego && <div>
+        <ComicTitlePanel>Real Name:</ComicTitlePanel>
+        {character.alterego}
+        <EditButton
+          title='Edit character alterego'
+          name='alterego'
+          state={character}
+          bodyComponent={TextEdit}
+          summitFunction={update}
+        />
+      </div>}
+
     </div>
   )
 }

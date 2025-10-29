@@ -13,6 +13,7 @@ import dnd from '../../assets/images/places/dnd.avif'
 import creativity from '../../assets/images/places/creativity.jpg'
 import heroism from '../../assets/images/places/cap.webp'
 import { Link } from 'react-router-dom'
+import Creatures from './Creatures'
 
 const BigTitle = (props) => (
   <div className='flex flex-col items-center max-w-full'>
@@ -530,6 +531,10 @@ const Rules = () => {
           world for the players to explore and influence through their
           characters.
         </Paragraph>
+      </Section>
+
+      <Section>
+        <Creatures />
       </Section>
     </div>
   )
